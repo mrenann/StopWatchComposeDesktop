@@ -1,6 +1,4 @@
 package ui
-import classes.StopWatch
-import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -25,13 +23,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import cafe.adriel.voyager.core.screen.Screen
+import classes.StopWatch
 
 object StopWatchScreen : Screen {
 
     val stopWatch = StopWatch()
 
     @Composable
-    @Preview
     override fun Content() {
         var isActive by remember { mutableStateOf(false) }
         Column(
