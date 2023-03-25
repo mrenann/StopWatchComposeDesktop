@@ -13,6 +13,7 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.WindowState
 import androidx.compose.ui.window.application
 import cafe.adriel.voyager.navigator.Navigator
+import ui.StopWatchScreen
 
 @Composable
 @Preview
@@ -28,7 +29,7 @@ fun App() {
 }
 
 fun main() = application {
-    Window(onCloseRequest = ::exitApplication, title = "StopWatch", resizable = false, state = WindowState(width = 500.dp, height = 200.dp)) {
+    Window(onCloseRequest = ::exitApplication, title = "classes.StopWatch", resizable = false, state = WindowState(width = 500.dp, height = 200.dp)) {
         App()
     }
 }
